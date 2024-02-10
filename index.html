@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        .divos {
+
+            height: 60vh;
+            background-color: #1A120B;
+        }
+
+        .flex {
+            flex-direction: column;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-family: 'Playfair Display SC', serif;
+            text-transform: capitalize;
+            text-align: center;
+            color: #E5E5CB;
+            font-size: 5.653rem;
+            letter-spacing: 0.08em;
+        }
+
+        .h2 {
+            font-family: 'Playfair Display SC', serif;
+            text-transform: capitalize;
+            text-align: center;
+            color: #D5CEA3;
+            font-size: 4.209rem;
+            letter-spacing: 0.08em;
+        }
+
+        span {
+            text-decoration: underline;
+        }
+
+        .h3 {
+            font-family: 'Playfair Display SC', serif !important;
+            text-transform: capitalize !important;
+            text-align: center;
+            color: #3C2A21 !important;
+            font-size: 3.157rem !important;
+            letter-spacing: 0.08em !important;
+
+        }
+
+        .h4 {
+            font-family: 'Playfair Display SC', serif;
+            color: #3C2A21;
+            font-size: 2.827rem;
+            letter-spacing: 0.05em;
+        }
+
+        .h5 {
+            font-family: 'Playfair Display SC', serif;
+            color: #3C2A21;
+            font-size: 1.777rem;
+            letter-spacing: 0.05em;
+        }
+
+        .h5-if {
+            font-family: 'Roboto', sans-serif;
+            text-transform: capitalize !important;
+            font-weight: lighter !important;
+        }
+
+        .p {
+            letter-spacing: 0.05em;
+            line-height: 30px;
+            font-family: 'Roboto', sans-serif;
+            color: #3C2A21;
+            letter-spacing: 0.05em;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .hero-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 5%;
+            object-fit: cover;
+        }
+
+        .lift {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .flexs {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .flexs img {
+            margin-right: 16px;
+            float: left;
+        }
+
+        .skilltitle {
+            margin-top: 0px;
+            margin-bottom: 64px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .text {
+            width: 60%;
+        }
+
+        .text p {
+            text-align: justify;
+        }
+
+        .top {
+            margin-top: 64px;
+        }
+
+        .flexbox {
+            display: flex;
+            justify-content: center;
+        }
+
+        .chiled {
+            margin-top: 32px;
+        }
+
+        .wrappers {
+            text-align: center;
+        }
+
+        .button {
+            padding: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.777rem;
+            color: #3C2A21;
+            background-color: #E5E5CB;
+            border-radius: 5%;
+            border: none;
+        }
+
+        .button:hover {
+            color: #D5CEA3;
+        }
+
+        .fluid {
+            margin-top: 32px;
+            background-color: #D5CEA3;
+            height: 25vh;
+        }
+
+        .flex-footer {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .last {
+            color: #3C2A21;
+            text-decoration: none;
+        }
+
+        .last:hover {
+            color: #E5E5CB;
+        }
+
+        .last-1 {
+            padding-right: 32px;
+        }
+
+        .wrap-footer {
+            margin-top: 40px;
+        }
+
+        .copy {
+            margin-top: 32px;
+        }
+
+        .copy p {
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        @media (min-width: 800px) and (max-width: 984px) {
+            .p {
+                font-weight: bold !important;
+            }
+
+            .text {
+                width: 90%;
+            }
+
+            .text p {
+                text-align: center;
+            }
+
+            .flexs img {
+                object-fit: cover;
+                display: block;
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            .flexs h4 {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 800px) {
+            h1 {
+                font-size: 3.815rem;
+            }
+
+            .h2 {
+                font-size: 3.052rem;
+            }
+
+            .h3 {
+                font-size: 2.441rem !important;
+
+            }
+
+            .h4 {
+                font-size: 1.953rem;
+            }
+
+            .h5 {
+                font-weight: bolder;
+                font-size: 1.563rem;
+            }
+
+            .p {
+                font-weight: bold !important;
+            }
+
+            .text-center {
+                margin-bottom: 16px !important;
+            }
+
+            .skilltitle {
+                margin-bottom: 32px;
+            }
+
+            .top {
+                margin-top: 32px;
+            }
+
+            .text {
+                width: 90%;
+            }
+
+            .text p {
+                text-align: center;
+            }
+
+            .flexs img {
+                object-fit: cover;
+                display: block;
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            .flexs h4 {
+                text-align: center;
+            }
+
+            .button {
+                font-size: 1.563rem;
+            }
+
+            .chiled {
+                margin-top: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header">
+        <div class=".container-fluid divos">
+            <div class="container">
+                <div class="flex">
+                    <div>
+                        <h1> fuad tafese</h1>
+                    </div>
+                    <div>
+                        <h2 class="h2"><span>prog</span>rammer</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hero">
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4 hero-img" src="./hero-4.jpg" alt="my_personal_picture">
+            <h3 class="display-5 fw-bold text-body-emphasis h3" style="font-weight: lighter !important;">Hello</h3>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-0 p">I'am Flexible and autonomous programmer, graduate with a BS in computer science
+                    looking to leverage
+                    experience building
+                    responsive scalable web apps to solve problems that delight end-users. Motivated to learn from
+                    senior
+                    engineers while sharing innovative ideas in an environment.</p>
+
+            </div>
+        </div>
+    </section>
+    <section id="skill">
+        <div class="skilltitle">
+            <h3 class="h3">Skill & Interst</h3>
+        </div>
+
+
+        <div class="flexs">
+
+
+            <div class="text"><img src="./caesol-2 chosen.jpg" height="200" alt="">
+
+
+                <h4 class="h5">Design & Development</h4>
+
+                <p class="p">With a knack for combining eye-catching designs and seamless functionality, I strive to
+                    create
+                    memorable online
+                    experiences. Equipped with a strong understanding of the latest technologies,
+                    I am always eager to push boundaries and turn ideas into
+                    Whether it's coding up a storm or designing captivating visuals,
+                    I'm ready to take on any challenge and bring your digital visions to life. Let's connect
+                    and
+                    make magic happen!</p>
+            </div>
+
+        </div>
+        <div class="flexs top">
+            <div class="text"><img src="./iking-1.jpg" height="239" alt="">
+
+
+                <h4 class="h5">Biking</h4>
+
+                <p class="p">They call me the pedal warrior, racing down the streets fearlessly.
+                    With the wind against my face and the thrill in my veins,
+                    I conquer every ramp, every track, and every steep slope that stands in my way.
+                    Biking isn't just a skill, it's my passion, my escape, and my freedom rolled into two wheels.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="location">
+        <div class="flexbox">
+            <div class="wrappers">
+                <div class="chiled">
+                    <h3 class="h3">Get In Touch</h3>
+                </div>
+                <div class="chiled">
+                    <h4 class="h5 h5-if">If you love biking as much as I do.</h4>
+                </div>
+                <div class="chiled">
+                    <p class="p">Love biking as much as I do? Let's talk about how awesome<br> they are! We can code and
+                        we
+                        also
+                        ride bicycles !</p>
+                </div>
+                <div class="chiled"><a href="mailto: fuadtafese113@gmail..com" class="button">ContactMe</a></div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class=".container-fluid fluid">
+            <div class="container flex-footer">
+                <div class="wrap-footer">
+                    <a href="#" class="last last-1">LinkedIn</a>
+                    <a href="#" class="last last-1">Twitter</a>
+                    <a href="#" class="last">Website</a>
+                </div>
+            </div>
+            <div class="copy">
+                <p class="p">© All Right Reserved Fuad Tafes</p>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
